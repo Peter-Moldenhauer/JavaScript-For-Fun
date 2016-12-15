@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- Calling a function from another function in JavaScript -->
+
+<html>
+<head>
+</head>
+<body>
+	
+<script type="text/javascript">
+<!--
+	function doFirst(){
+		document.write("I am the first function");
+	}
+	function doSecond(){
+		document.write(" THIS IS SECOND FUNCTION!");
+	}
+	
+	function start(){   <!-- call the above functions in this function --> 
+		doFirst();
+		doSecond();
+	}
+	
+	start();   <!-- call the function which calls the other functions --> 
+//--> 
+</script> 
+	
+</body>
+</html>

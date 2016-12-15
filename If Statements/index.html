@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- If statements -->
+
+<html>
+<head>
+</head>
+<body>
+	
+<script type="text/javascript">
+<!--
+	var myVar1 = 24;
+	var myVar2 = 36; 
+	
+	if(myVar1 != myVar2){                                           <!-- If statement --> 
+		document.write("Variables are not equal", "<br />");
+	}
+	
+	if(myVar1 < myVar2){                                            <!-- If statement -->
+		document.write("Variable 1 is less than variable 2", "<br />");
+	}
+	
+	if(myVar1 > myVar2){
+		document.write("Variable 1 is greater than variable 2");     <!-- If/else statement -->
+	}else{
+		document.write("Variable 1 is NOT greater than variable 2", "<br />");
+	}
+	
+	var firstName = "Peter";
+	var lastName = "Moldenhauer";
+	
+	if(firstName == "Peter"){                                     <!-- Nested if/else statement --> 
+		if(lastName == "Moldenhauer"){
+			document.write("My name is " + firstName + " " + lastName, "<br />");
+		}else{
+			document.write("What is my name???");
+		}
+	}
+	
+	if( (firstName == "Peter") && (lastName == "Moldenhauer") ){   <!-- Complex condition if statement -->
+		document.write("AGAIN: my name is Peter Moldenhauer");        <!-- && (and) || (or) -->
+	}
+//--> 
+</script> 
+	
+</body>
+</html>
