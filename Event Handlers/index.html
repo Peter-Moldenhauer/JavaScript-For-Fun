@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- JavaScript Event Handlers. Event handlers is basically runnning a piece of JavaScript code in 
+	response to a user action. These allow for interactive and dynamic web pages. 
+	
+	Note: When working with event handlers, you dont always need to place the JavaScript inside of the
+	script tags. -->
+
+<html>
+<head>
+</head>            <!-- Event Handler (onLoad) in BODY TAG takes affect whenever the webpage is done loading --> 
+                   <!-- Event Handler (onUnload) in BODY TAG takes affect whenever the webpage is closed/exited -->
+<body onLoad="alert('Your website has loaded!');" onUnload="alert('Goodbye!');">   
+	
+<script type="text/javascript">
+<!--
+	 
+//--> 
+</script> 
+
+<form>     <!-- Event Handler (onClick) in the form tags create an alert box when form button is clicked -->
+	<input type="button" value="Click Here" onClick="alert('Hello how is your day?');" />
+</form> 
+<br /> 
+          <!-- Event Handler (onMouseOver) that creates an alert box when link is hovered over -->
+<a href="http://www.google.com" onMouseOver="alert('Hello Again!');">Hover over me!</a> 
+<br /><br />	
+	
+          <!-- Event Handler (onMouseOut) that creates an alert box when cursor is moved away from the link after hover -->
+<a href="http://www.google.com" onMouseOut="alert('Dont Leave!');">Hover over me!</a>
+	
+</body>
+</html>
