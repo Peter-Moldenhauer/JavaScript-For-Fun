@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- JavaScript Arrays. An array is a way to store multiple values in a single variable/object -->
+
+<html>
+<head>
+</head>            
+<body>   
+	
+<script type="text/javascript">  
+<!--
+	var people = new Array("Peter", "Rachel", "Steve", "Derek", "Jerry");   <!-- Create array (first way) -->
+	
+	document.write(people[0]);   <!-- Print specific array element to screen with array index --> 
+	
+	document.write("<br />"); 
+	
+	var things = new Array(3);    <!-- Create array with 3 elements (second way) --> 
+	
+	things[0] = "House";         <!-- Treat each array index as a variable and store a value in it --> 
+	things[1] = "Car";
+	things[2] = "Computer"; 
+	
+	document.write(things[2]);   <!-- Print specific array element to screen with array index --> 
+	
+	document.write("<br />");
+	
+	var stuff = new Array();    <!-- Create a "dynamic" array in which you do not know the size of the array from the start (third way) --> 
+	
+	stuff[0] = "nachos";        <!-- Initialize array elements, you are not limited to any number, add as many as you want --> 
+	stuff[1] = "cheeseburger";
+	stuff[2] = "Milk";
+	stuff[3] = "Apples"; 
+	
+	document.write(stuff[3]);   <!-- Print specific array element to screen with array index -->
+//--> 
+</script> 
+	
+</body>
+</html>

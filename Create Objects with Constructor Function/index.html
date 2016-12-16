@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- Creating your own JavaScript Objects. Remember an object is a special data type that has its own properties 
+	and its own methods -->
+
+<html>
+<head>
+<script type="text/javascript">     <!-- Make the JavaScript object "blueprint" in the head tags -->
+	function person(name, age){     <!-- This is a constructor function that is basically a blueprint for a function --> 
+		this.name = name;
+		this.age = age;
+	}
+	
+	var student = new person("Peter Moldenhauer", 30);  <!-- Create a new instance (object) with the keyword: new -->
+	var father = new person("Steve Moldenhauer", 62); 
+</script>
+</head>            
+<body>   
+	
+<script type="text/javascript">    <!-- Print out the created JavaScript object in the body tags --> 
+<!--
+	document.write(father.name);
+	document.write("<br />");
+	document.write(student.name);
+//--> 
+</script> 
+	
+</body>
+</html>

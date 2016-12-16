@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- Add methods to objects you create -->
+
+<html>
+<head>
+<script type="text/javascript">     <!-- Create the JavaScript object in the head tags -->
+	function people(name, age){   <!-- Constructor function with properties --> 
+		this.name = name;
+		this.age = age;
+		this.yearsUntilRetirement = yearsToRetire;    <!-- This line associates the function (below) with this specific object, NOTE: no parenth!! --> 
+	} 
+	
+	function yearsToRetire(){   <!-- Create function, NOTE: use this.age to use a specific objects age property --> 
+		var numYears = 65 - this.age;
+		return numYears;
+	}
+	
+	var peter = new people("Peter Moldenhauer", 30);
+	var rachel = new people("Rachel Urban", 26);
+</script>
+</head>            
+<body>   
+	
+<script type="text/javascript">    <!-- Print out the created JavaScript object in the body tags --> 
+<!--
+	document.write(peter.yearsUntilRetirement());
+	document.write("<br />");
+	document.write(rachel.yearsUntilRetirement());
+//--> 
+</script> 
+	
+</body>
+</html>
