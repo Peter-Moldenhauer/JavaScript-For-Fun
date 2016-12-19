@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- Since arrays are objects, this means that arrays can have properties and methods 
+	
+	join(): converts array elements to a string
+	pop(): removes the last element of array 
+	concat(): adds two arrays together 
+	reverse(): takes an array and reverses the elements in the array 
+	push(): adds element(s) on to the end of an array
+	sort(): sorts array in alphabetical order -->
+
+<html>
+<head>
+</head>            
+<body>   
+	
+<script type="text/javascript">  
+<!--
+	var actors = new Array("Bruce Willis", "Brad Pitt", "Tommy Lee Jones");
+	
+	document.write(actors.length);  <!-- the length property tells how many elements are in the array --> 
+	
+	document.write("<br />");
+	
+	var actresses = new Array("Megan Fox", "Jodie Foster", "Demi Moore"); 
+	
+	<!-- the concat() array method takes two arrays and adds them together to create an entirely new array -->
+
+	var movieStars = actors.concat(actresses);  <!-- This takes the actors array and sticks the actresses array on the end of it and creates the new array: movieStars -->
+	
+	document.write(movieStars[5]); 
+	
+	document.write("<br />");
+	
+	var movies = new Array("Fight Club", "Die Hard", "Independence Day", "Star Wars", "Memento"); 
+	
+	var string1 = movies.join(" - ");  <!-- the join() array method takes every element of array and converts to a string --> 
+	                 <!-- if you have no parameter in join() then by default a comma is used to separate all of the array elements in the string --> 
+	document.write(string1); 
+	
+	document.write("<br />"); 
+	
+	movies.pop();      <!-- the pop() array method removes the last element from an array --> 
+	
+	document.write(movies[4]);   <!-- this will be undefined because this array element does not exist anymore after being popped --> 
+	
+	document.write("<br />");
+	
+	movies.reverse();   <!-- the reverse() array method reverses the order of the array elements --> 
+	
+	document.write(movies); 
+	
+	document.write("<br />");
+	
+	movies.push("Dumb and Dummer", "Man on Fire");   <!-- the push() array method adds one to many elements to the end of an array --> 
+	
+	document.write(movies); 
+	
+	document.write("<br />");
+	
+	movies.sort();   <!-- the sort() array method takes all of the elements in the array and sorts them in alphabetical order --> 
+	
+	document.write(movies); 
+	
+	document.write("<br />");
+//--> 
+</script> 
+	
+</body>
+</html>
