@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- Acccessing form elements -->
+
+<html>
+<head>
+</head>            
+<body>   
+<form name="myForm">
+	Username: <input type="text" name="usersname" />
+	Password: <input type="password" name="password" /> 
+	<input type="submit" value="Submit Here!" /> 
+</form>
+ 
+<script type="text/javascript">  
+<!--
+	var x = document.forms[0].elements[0].name;  <!-- elements[0] gives access to first element in form, element[1] second element, etc --> 
+	document.write(x); 
+	document.write("<br/>");
+	
+	<!-- access form element same as above but instead of forms[0] use the name of the form, same with elements[0] -->
+	var y = document.myForm.usersname.name;
+	document.write(y);
+//--> 
+</script> 
+	
+</body>
+</html>

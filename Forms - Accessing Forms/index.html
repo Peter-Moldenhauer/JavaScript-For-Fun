@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- Acccessing Forms in JavaScript 
+	In HTML, whenever you add a form to your webpage, in JavaScript it creates a form object automatically. 
+	-->
+
+<html>
+<head>
+</head>            
+<body>   
+<form>
+	Username: <input type="text" />
+	Password: <input type="password" />
+	<input type="submit" value="Submit Here!" />
+</form>
+	
+<!-- JavaScript automatically puts all forms created in HTML in a form "array", first form is form[0], second is form[1] etc. -->
+<!-- one of the properties in a JavaScript form object is length. This is how many items you have in the form. Form above has 3 items. --> 
+<script type="text/javascript">  
+<!--
+	var x = document.forms[0].length;  <!-- 3 will be stored in x --> 
+	document.write(x); 
+//--> 
+</script> 
+	
+</body>
+</html>

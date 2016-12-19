@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- A math object is another built in object in JavaScript (like the array object). This is useful when you 
+	are making a calculator or a program that does calculations. The math object has built in properties (such as pi).
+	Similar to the array object, the math object has properties and methods. -->
+
+<html>
+<head>
+</head>            
+<body>   
+	
+<script type="text/javascript">  
+<!--
+	document.write(Math.PI);   <!-- pi property --> 
+	document.write("<br/>");
+	document.write(Math.E);   <!-- eulers constant property --> 
+	document.write("<br/>");
+	
+	var userInput = prompt("Enter a number...", "");   <!-- give the user a prompt box to enter a number --> 
+	var answer = Math.sqrt(userInput);   <!-- square root method, uses the userInput number and stores answer in a new variable --> 
+	alert("The square root of " + userInput + " is " + answer); <!-- give user an alert box to display the answer --> 
+//--> 
+</script> 
+	
+</body>
+</html>
