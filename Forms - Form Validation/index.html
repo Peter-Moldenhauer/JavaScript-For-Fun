@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- JavaScript form validation -->
+
+<html>
+<head>
+<script type="text/javascript">  <!-- add JavaScript functions in the head of the website -->
+	function validator(){
+		if(document.myForm.theBox.checked){   <!-- checked is true if checked, false if not checked -->
+			alert("Yes its checked!");
+		}else
+			alert("Box is not checked!"); 
+	}
+</script>
+</head>            
+<body>   
+
+<form name="myForm">
+	<input type="checkbox" name="theBox" />
+	<input type="button" value="Press me!" onClick="validator()" /> <!-- validator() is the function that is called whenever the button is clicked -->
+</form>
+ 
+<script type="text/javascript">
+  
+<!--
+	
+//--> 
+</script> 
+	
+</body>
+</html>
